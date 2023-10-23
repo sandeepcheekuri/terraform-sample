@@ -8,7 +8,6 @@ provider "aws" {
 resource "aws_instance" "web" {
     ami = "ami-0df435f331839b2d6"
     instance_type = "t2.micro"
-    availability_zone = "us-easy-1a"
     key_name = "jenkins-server-key"
   
   tags = {
